@@ -33,12 +33,7 @@ $allbeers = $query->fetchAll(PDO::FETCH_ASSOC);
 
 foreach($allbeers as $beerarray) {
 
-    echo '<img src="images">' . $beerarray["images"];
-
-    echo $beerarray["images"];
-
-
-
+    echo '<img src="' .$beerarray["images"].' " >';
     echo "<p> " . 'Name of beer' . ': ' . $beerarray["beer_name"] . "<p>";
     echo "<p> " . 'What type of beer is it?' . ': ' . $beerarray["beer_type"] . "</p>";
     echo "<p> " . 'Where is the beer from?' .  ': ' . $beerarray["region"]  . "</p>";
